@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="investstyle.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <img src="images\logojpg.png" />
+      <div class="sections">
+        <a href="">Página Inicial</a>
+
+        <a href="">Investimentos</a>
+
+        <a href="">Contato</a>
+      </div>
+    </nav>
+
+    <div class="grid">
+      <div class="leftarea">
+        <h2>CDB LIQUIDEZ DIARIA</h2>
+        <h3>Rende 100% do CDI!</h3>
+        <p>
+          CDB é a sigla para Certificado de Depósito Bancário, e é um título de
+          Renda Fixa emitido por bancos para captar recursos.
+          <br />
+          Na prática, é como se você emprestasse o seu dinheiro para o banco e,
+          em troca, ele lhe pagasse juros ao final do período combinado.
+        </p>
+        <div class="calculator">
+          <h1>Calculadora de investimentos</h1>
+          <label
+            >Valor que deseja investir:
+            <input placeholder="Digite o valor aqui" type="number" />
+          </label>
+          <br />
+          <label
+            >Tempo que deseja deixar investindo (meses):
+            <select id="meses" name="meses">
+              <option>Selecione:</option>
+              <option value="1">1 mês</option>
+              <option value="2">2 meses</option>
+              <option value="3">3 meses</option>
+              <option value="4">4 meses</option>
+              <option value="5">5 meses</option>
+              <option value="6">6 meses</option>
+              <option value="7">7 meses</option>
+              <option value="8">8 meses</option>
+              <option value="9">9 meses</option>
+              <option value="10">10 meses</option>
+              <option value="11">11 meses</option>
+              <option value="12">12 meses</option>
+            </select>
+          </label>
+          <button type="submit">Calcular</button>
+        </div>
+        <div class="results">
+            <div class="topdiv" style="height: 50%;">
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1vh;">Valor Inicial:<div class="value" id="startvalue"></div></div>
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1vh;">Tempo:<div class="value" id="timevalue"></div></div>
+            </div>
+            <div class="bottomdiv" style="height: 50%;">
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1vh;">Rendimento:<div class="value" id=""></div></div>
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1vh;">Valor Total:<div class="value" id=""></div></div>
+            </div>
+        </div>
+    </div>
+
+      <div class="rightarea">
+        <img src="./logointer.png" />
+      </div>
+    </div>
+  </body>
+</html>
